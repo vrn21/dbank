@@ -28,11 +28,14 @@ actor DBank{
   };
   //topUP(); 
   public func withdraw(amount : Nat){
-    currentValue -= amount;
-    Debug.print("The current Value is: "  );
-    Debug.print(debug_show(currentValue));
+    if (currentValue - amount == 0){
+      currentValue -= amount;
+      Debug.print("The current Value is: "  );
+      Debug.print(debug_show(currentValue));
+  }else{
+    Debug.print("Cannot do that, amount is greater than balance "  );
+  }
   };
-
 }
 
 //dfx start
