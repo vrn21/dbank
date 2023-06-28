@@ -1,6 +1,7 @@
 import Debug "mo:base/Debug";
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
+import Int "mo:base/Int";
 
 
 
@@ -28,7 +29,8 @@ actor DBank{
   };
   //topUP(); 
   public func withdraw(amount : Nat){
-    if (currentValue - amount == 0){
+    let temp : Int = currentValue - amount;
+    if (temp == 0){
       currentValue -= amount;
       Debug.print("The current Value is: "  );
       Debug.print(debug_show(currentValue));
