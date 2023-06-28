@@ -22,11 +22,16 @@ actor DBank{
 // to call a function from cli dfx canister call dbank_backend topUP 'arguement'
 
   public func topUP(amount : Nat){
-    currentValue += 1;
+    currentValue += amount;
     Debug.print("The current Value is: "  );
     Debug.print(debug_show(currentValue));
   };
   //topUP(); 
+  public func withdraw(amount : Nat){
+    currentValue -= amount;
+    Debug.print("The current Value is: "  );
+    Debug.print(debug_show(currentValue));
+  };
 
 }
 
