@@ -7,10 +7,16 @@ import Int "mo:base/Int";
 
 
 actor DBank{
-  var currentValue = 300;
-  currentValue := 100;
+  //ORTHOGONAL PERSISTENCE  (stable keyword)
+  //there are two types of variables a flexible variable and a stable variable
+  // default is flexible, if we use it, and did some writing to currentValue, 
+  //then reload the page , currentValue will reset to initial value, 
+  //we dont want that to happend so we use stable keyword in front of var
+  stable var currentValue = 300;
+  
   //this is used to change value.
   //let val = 500;  creates a immutable variable
+  
   Debug.print(debug_show(currentValue));
   
 
