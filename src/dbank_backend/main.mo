@@ -3,6 +3,7 @@ import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Int "mo:base/Int";
 
+//this file is just made to learn how icp workss nothing actualy works over here
 
 
 actor DBank{
@@ -42,3 +43,4 @@ actor DBank{
 
 //dfx start
 //dfx deploy
+//dfx resetatr
