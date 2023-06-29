@@ -29,6 +29,8 @@ actor DBank{
     Debug.print(debug_show(currentValue));
   };
   //topUP(); 
+
+
   public func withdraw(amount : Nat){
     let temp : Int = currentValue - amount;
     if (temp == 0){
@@ -39,6 +41,13 @@ actor DBank{
     Debug.print("Cannot do that, amount is greater than balance "  );
   }
   };
+
+//query vs update , query is only for reading while updating is mainly used for writing, query takes very less time
+
+  public query func checkBal(): async Nat {
+    return currentValue;
+  };
+
 }
 
 //dfx start
