@@ -61,9 +61,12 @@ actor DBank{
   };
 
   public func compound() {
-    let timeNow = Time.now();
-    let timeDiff = timeNow-startingTime
-  }
+    let endingTime = Time.now();
+    let elapsedTimeNS = endingTime - startingTime;
+    let elapsedTimeS = elapsedTimeNS/1000000000;
+    currentValue := currentValue *(1.01**Float.fromInt(elapsedTimeS));
+    startingTime := elapsedTimeNS;
+  };
 
 }
 
