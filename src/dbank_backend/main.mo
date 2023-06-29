@@ -2,6 +2,8 @@ import Debug "mo:base/Debug";
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Int "mo:base/Int";
+import Time "mo:base/Time";
+import Float "mo:base/Float";
 
 //this file is just made to learn how icp workss nothing actualy works over here
 
@@ -12,7 +14,7 @@ actor DBank{
   // default is flexible, if we use it, and did some writing to currentValue, 
   //then reload the page , currentValue will reset to initial value, 
   //we dont want that to happend so we use stable keyword in front of var
-  stable var currentValue = 300;
+  stable var currentValue : Float = 300;
   
   //this is used to change value.
   //let val = 500;  creates a immutable variable
@@ -29,7 +31,11 @@ actor DBank{
 // and enter neccesary details
 // to call a function from cli dfx canister call dbank_backend topUP 'arguement'
 
-  public func topUP(amount : Nat){
+  stable var startingTime = Time.now();
+// the out put will show something like 1_23_345_456_357_... etc the output just gives us theoutput in billions, millions thousands hundreds etc
+// the output will be nanoseconds from the date 1970-1-1 
+
+  public func topUP(amount : Float){
     currentValue += amount;
     Debug.print("The current Value is: "  );
     Debug.print(debug_show(currentValue));
@@ -37,8 +43,8 @@ actor DBank{
   //topUP(); 
 
 
-  public func withdraw(amount : Nat){
-    let temp : Int = currentValue - amount;
+  public func withdraw(amount : Float){
+    let temp : Float = currentValue - amount;
     if (temp == 0){
       currentValue -= amount;
       Debug.print("The current Value is: "  );
@@ -50,11 +56,17 @@ actor DBank{
 
 //query vs update , query is only for reading while updating is mainly used for writing, query takes very less time
 
-  public query func checkBal(): async Nat {
+  public query func checkBal(): async Float {
     return currentValue;
   };
 
+  public func compound() {
+    let timeNow = Time.now();
+    let timeDiff = timeNow-startingTime
+  }
+
 }
+
 
 //dfx start
 //dfx deploy
