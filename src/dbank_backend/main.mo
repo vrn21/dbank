@@ -14,8 +14,8 @@ actor DBank{
   // default is flexible, if we use it, and did some writing to currentValue, 
   //then reload the page , currentValue will reset to initial value, 
   //we dont want that to happend so we use stable keyword in front of var
-   var currentValue : Float = 300;
-  currentValue := 300;
+  stable var currentValue : Float = 300;
+  //currentValue := 300;
   
   //this is used to change value.
   //let val = 500;  creates a immutable variable
