@@ -71,10 +71,6 @@ actor DBank{
     let endingTime = Time.now();
     let elapsedTimeNS = endingTime - startingTime;
     let elapsedTimeS = elapsedTimeNS/10000000000000;
-    Debug.print(debug_show(startingTime));
-    Debug.print(debug_show(endingTime));
-    Debug.print(debug_show(elapsedTimeS));
-
     currentValue := currentValue *(1.01**Float.fromInt(elapsedTimeS));
     startingTime := elapsedTimeNS;
   };
