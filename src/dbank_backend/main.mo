@@ -14,12 +14,13 @@ actor DBank{
   // default is flexible, if we use it, and did some writing to currentValue, 
   //then reload the page , currentValue will reset to initial value, 
   //we dont want that to happend so we use stable keyword in front of var
-  stable var currentValue : Float = 300;
+   var currentValue : Float = 300;
+  currentValue := 300;
   
   //this is used to change value.
   //let val = 500;  creates a immutable variable
   
-  Debug.print(debug_show(currentValue));
+  //Debug.print(debug_show(currentValue));
   
 
 //if the function is not public, the fn will only be called within the canister
@@ -63,7 +64,11 @@ actor DBank{
   public func compound() {
     let endingTime = Time.now();
     let elapsedTimeNS = endingTime - startingTime;
-    let elapsedTimeS = elapsedTimeNS/1000000000;
+    let elapsedTimeS = elapsedTimeNS/10000000000000;
+    Debug.print(debug_show(startingTime));
+    Debug.print(debug_show(endingTime));
+    Debug.print(debug_show(elapsedTimeS));
+
     currentValue := currentValue *(1.01**Float.fromInt(elapsedTimeS));
     startingTime := elapsedTimeNS;
   };
