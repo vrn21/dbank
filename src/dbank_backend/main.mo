@@ -6,7 +6,13 @@ import Time "mo:base/Time";
 import Float "mo:base/Float";
 
 //this file is just made to learn how icp workss nothing actualy works over here
-
+//day1 1
+//day2 1
+//day3 1
+//day4 0
+//day5 0
+//day6 0
+//day7 0
 
 actor DBank{
   //ORTHOGONAL PERSISTENCE  (stable keyword)
