@@ -80,4 +80,3 @@ actor DBank{
 
 //dfx start
 //dfx deploy
-//dfx resetatr
