@@ -15,5 +15,12 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 
   document.getElementById("greeting").innerText = greeting;
 
+  
+
   return false;
+});
+
+document.getElementById("login").addEventListener("click", function() {
+  // Replace "target-page.html" with the actual URL or file path of the page you want to open
+  window.location.href = "login.html";
 });
