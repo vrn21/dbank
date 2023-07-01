@@ -1,3 +1,19 @@
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18);
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    box-shadow: 1px -1px rgba(62, 62, 62, 0.18), 2px -2px rgba(62, 62, 62, 0.18),
+      3px -3px rgba(62, 62, 62, 0.18), 4px -4px rgba(62, 62, 62, 0.18),
+      5px -5px rgba(62, 62, 62, 0.18), 6px -6px rgba(62, 62, 62, 0.18),
+      7px -7px rgba(62, 62, 62, 0.18), 8px -8px rgba(62, 62, 62, 0.18);
+    transform: translateX(-8px) translateY(8px);
+  }
+}
 .window {
   position: absolute;
   top: 0;
@@ -19,10 +35,11 @@
   position: absolute;
 }
 .bar {
+  border: 0;
+  background-color: var(--white);
   top: 21px;
   left: calc(50% - 289px);
   border-radius: var(--br-9xs);
-  background-color: var(--white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   width: 371px;
   height: 20px;
@@ -195,13 +212,56 @@
   width: 174px;
   height: 48px;
 }
+.squircle-icon1:active,
+.squircle-icon1:hover,
+.squircle-icon:active,
+.squircle-icon:hover {
+  animation: 1s ease 0s infinite normal none shadow-pop-tr;
+  opacity: 1;
+}
 .sign-up- {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
   top: -1px;
   left: 961px;
-  font-size: 20px;
+  font-size: var(--font-size-xl);
+  text-decoration: underline;
   letter-spacing: 0.01em;
   line-height: 92px;
   font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 414px;
+  height: 84px;
+}
+.login-,
+.squircle-icon1 {
+  position: absolute;
+  top: 17px;
+  left: 886px;
+  width: 174px;
+  height: 48px;
+}
+.login- {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: -3px;
+  left: 766px;
+  font-size: var(--font-size-xl);
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+  line-height: 92px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--white);
   text-align: center;
   display: flex;
   align-items: center;
@@ -276,38 +336,38 @@
   top: 2726px;
   width: 841px;
 }
-.squircle-icon1,
 .squircle-icon2,
-.squircle-icon3 {
+.squircle-icon3,
+.squircle-icon4 {
   position: absolute;
   top: 3595px;
   left: 130px;
   width: 227px;
   height: 227px;
 }
-.squircle-icon2,
-.squircle-icon3 {
+.squircle-icon3,
+.squircle-icon4 {
   top: 3822px;
   left: 527px;
 }
-.squircle-icon3 {
+.squircle-icon4 {
   top: 4049px;
   left: 944px;
 }
-.squircle-icon4,
 .squircle-icon5,
-.squircle-icon6 {
+.squircle-icon6,
+.squircle-icon7 {
   position: absolute;
   top: 4276px;
   left: 527px;
   width: 227px;
   height: 227px;
 }
-.squircle-icon5,
-.squircle-icon6 {
+.squircle-icon6,
+.squircle-icon7 {
   top: 4730px;
 }
-.squircle-icon6 {
+.squircle-icon7 {
   top: 4503px;
   left: 132px;
 }
