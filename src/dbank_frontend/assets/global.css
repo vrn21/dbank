@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inherit: inherit;
+  --font-cormorant-sc: "Cormorant SC";
+  --font-monoton: Monoton;
+
+  /* font sizes */
+  --font-size-68xl: 87px;
+  --font-size-31xl: 50px;
+  --font-size-61xl: 80px;
+  --font-size-11xl: 30px;
+  --font-size-21xl: 40px;
+  --font-size-mini: 15px;
+
+  /* Colors */
+  --white: #fff;
+  --color-blue: #5200ff;
+
+  /* Paddings */
+  --padding-34xl: 53px;
+
+  /* border radiuses */
+  --br-9xs: 4px;
+}

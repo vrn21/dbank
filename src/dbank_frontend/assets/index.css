@@ -1,0 +1,519 @@
+.window {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 465px);
+  background-color: var(--white);
+  width: 929px;
+  height: 537px;
+  opacity: 0.64;
+}
+.dividerbg-icon {
+  top: 0;
+  left: calc(50% - 442px);
+  width: 1286px;
+  height: 631px;
+}
+.bar,
+.desktop,
+.dividerbg-icon {
+  position: absolute;
+}
+.bar {
+  top: 21px;
+  left: calc(50% - 289px);
+  border-radius: var(--br-9xs);
+  background-color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  width: 371px;
+  height: 20px;
+}
+.desktop {
+  top: 118px;
+  left: 870px;
+  border-radius: 12px;
+  box-shadow: 0 16px 24px rgba(17, 37, 62, 0.16);
+  backdrop-filter: blur(20px);
+  width: 884px;
+  height: 535px;
+  overflow: hidden;
+}
+.contentdown,
+.contentup,
+.device {
+  position: absolute;
+  background-color: var(--white);
+}
+.contentdown {
+  top: 419px;
+  left: 1069px;
+  border-radius: var(--br-9xs);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.08);
+  width: 695px;
+  height: 210px;
+}
+.contentup,
+.device {
+  top: 176px;
+}
+.contentup {
+  left: 1069px;
+  border-radius: var(--br-9xs);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.08);
+  width: 695px;
+  height: 219px;
+}
+.device {
+  left: 812px;
+  border-radius: 30px;
+  box-shadow: 6px 0 24px rgba(0, 0, 0, 0.12), 0 16px 32px rgba(17, 37, 62, 0.16);
+  width: 266px;
+  height: 533px;
+}
+.decentralization {
+  color: var(--white);
+}
+.headline {
+  position: absolute;
+  top: 269px;
+  left: 65px;
+  font-size: var(--font-size-68xl);
+  letter-spacing: -0.04em;
+  line-height: 96px;
+  display: inline-block;
+  width: 908px;
+  mix-blend-mode: luminosity;
+  color: #e6e6e6;
+}
+.secure-transparent-and {
+  margin: 0;
+}
+.subtitle {
+  position: absolute;
+  top: 555px;
+  left: 65px;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 500;
+  display: inline-block;
+  width: 761px;
+  height: 100px;
+  mix-blend-mode: luminosity;
+}
+.products {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 51.5px);
+  line-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.careers,
+.products,
+.tab1 {
+  width: 103px;
+  height: 44px;
+}
+.tab1 {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.careers {
+  top: calc(50% - 22px);
+  left: calc(50% - 53.5px);
+  line-height: 92px;
+  justify-content: center;
+}
+.bank,
+.careers,
+.d,
+.tabs {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.tabs {
+  top: 17px;
+  left: 411px;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 14px;
+  text-align: center;
+  font-size: var(--font-size-mini);
+}
+.bank,
+.d {
+  letter-spacing: 0.01em;
+  line-height: 92px;
+  justify-content: center;
+}
+.d {
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    250.75deg,
+    #ad00ff,
+    #00f0ff 16.67%,
+    #06f 33.33%,
+    #14ff00 50%,
+    #ffe500 66.15%,
+    #f90 80.73%,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 314px;
+  height: 108px;
+}
+.bank {
+  top: 18px;
+  left: 126px;
+  font-size: 45px;
+  font-family: var(--font-cormorant-sc);
+  width: 219px;
+  height: 72px;
+  -webkit-text-stroke: 0.3px #fff;
+}
+.dbank-logo {
+  position: absolute;
+  top: -6px;
+  left: -95px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 345px;
+  height: 108px;
+  text-align: center;
+  font-size: 48px;
+  font-family: var(--font-monoton);
+}
+.sign-up-,
+.squircle-icon {
+  position: absolute;
+  top: 17px;
+  left: 1081px;
+  width: 174px;
+  height: 48px;
+}
+.sign-up- {
+  top: -1px;
+  left: 961px;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  line-height: 92px;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 414px;
+  height: 84px;
+}
+.d1 {
+  background: linear-gradient(
+    231.61deg,
+    #5200ff,
+    #00f0ff 19.79%,
+    #0085ff 32.29%,
+    #3f0 50.52%,
+    #faff00 66.15%,
+    #f90 82.81%,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.our-services,
+.start-your-financial-container {
+  position: absolute;
+  left: 100px;
+  font-weight: 600;
+  display: inline-block;
+}
+.start-your-financial-container {
+  top: 822px;
+  font-size: 160px;
+  letter-spacing: -0.07em;
+  line-height: 138px;
+  width: 660px;
+  height: 820px;
+}
+.our-services {
+  top: 1877px;
+  font-size: var(--font-size-68xl);
+  letter-spacing: -0.04em;
+  line-height: 96px;
+  width: 582px;
+  height: 106px;
+}
+.deposit {
+  color: var(--color-blue);
+}
+.withdraw-access-your-funds-an {
+  margin-bottom: 0;
+}
+.deposit-seamlessly-grow-your {
+  margin: 0;
+  padding-left: var(--padding-34xl);
+}
+.decentralized-no-central-container,
+.deposit-seamlessly-grow-container {
+  position: absolute;
+  left: 151px;
+  font-size: var(--font-inherit);
+  letter-spacing: -0.04em;
+  line-height: 74px;
+  font-weight: 600;
+  font-family: var(--font-inherit);
+  display: inline-block;
+}
+.deposit-seamlessly-grow-container {
+  top: 1983px;
+  width: 926px;
+  height: 794px;
+}
+.decentralized-no-central-container {
+  top: 2726px;
+  width: 841px;
+}
+.squircle-icon1,
+.squircle-icon2,
+.squircle-icon3 {
+  position: absolute;
+  top: 3595px;
+  left: 130px;
+  width: 227px;
+  height: 227px;
+}
+.squircle-icon2,
+.squircle-icon3 {
+  top: 3822px;
+  left: 527px;
+}
+.squircle-icon3 {
+  top: 4049px;
+  left: 944px;
+}
+.squircle-icon4,
+.squircle-icon5,
+.squircle-icon6 {
+  position: absolute;
+  top: 4276px;
+  left: 527px;
+  width: 227px;
+  height: 227px;
+}
+.squircle-icon5,
+.squircle-icon6 {
+  top: 4730px;
+}
+.squircle-icon6 {
+  top: 4503px;
+  left: 132px;
+}
+.iconsaxboldcoin1,
+.iconsaxboldcoin11,
+.iconsaxboldemptywalletadd {
+  position: absolute;
+  top: 3629px;
+  left: 171px;
+  width: 140px;
+  height: 160.53px;
+  overflow: hidden;
+}
+.iconsaxboldcoin1,
+.iconsaxboldcoin11 {
+  top: 3866px;
+  left: 572px;
+  height: 140px;
+}
+.iconsaxboldcoin11 {
+  top: 4547px;
+  left: 175px;
+}
+.iconsaxboldbitcoinconvert,
+.iconsaxboldcoin,
+.iconsaxboldemptywallettick {
+  position: absolute;
+  top: 4093px;
+  left: 988px;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+}
+.iconsaxboldbitcoinconvert,
+.iconsaxboldemptywallettick {
+  top: 4320px;
+  left: 570px;
+}
+.iconsaxboldemptywallettick {
+  top: 4774px;
+}
+.create-a-wallet,
+.deposit-again,
+.deposit-coins,
+.earn-while-your,
+.let-them-cook,
+.withdraw-whenever-you {
+  position: absolute;
+  top: 3808px;
+  left: 53px;
+  line-height: 92px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 361px;
+  height: 94px;
+}
+.deposit-again,
+.deposit-coins,
+.earn-while-your,
+.let-them-cook,
+.withdraw-whenever-you {
+  top: 4049px;
+  left: 456px;
+}
+.deposit-again,
+.earn-while-your,
+.let-them-cook,
+.withdraw-whenever-you {
+  top: 4725px;
+  left: 53px;
+}
+.earn-while-your,
+.let-them-cook,
+.withdraw-whenever-you {
+  top: 4957px;
+  left: 466px;
+  line-height: 43.5px;
+}
+.let-them-cook,
+.withdraw-whenever-you {
+  top: 4276px;
+  left: 877px;
+  line-height: 92px;
+}
+.withdraw-whenever-you {
+  top: 4519px;
+  left: 456px;
+  line-height: 35px;
+}
+.homepage-child,
+.homepage-item {
+  position: absolute;
+  top: 3625px;
+  left: 413px;
+  width: 200px;
+  height: 165.41px;
+  overflow: hidden;
+}
+.homepage-item {
+  top: 4341px;
+  left: 912px;
+  width: 216px;
+  height: 217.99px;
+}
+.arrow-icon,
+.homepage-child1,
+.homepage-inner {
+  position: absolute;
+  top: 3866px;
+  left: 821px;
+  width: 228.07px;
+  height: 174.83px;
+  overflow: hidden;
+}
+.arrow-icon,
+.homepage-child1 {
+  top: 4292px;
+  left: 243px;
+  width: 220.68px;
+  height: 189.9px;
+}
+.homepage-child1 {
+  top: 4802px;
+  left: 244px;
+  width: 190.43px;
+  height: 119px;
+}
+.it-is-as,
+.reach-out-to {
+  position: absolute;
+  top: 3420px;
+  left: 102px;
+  font-size: var(--font-size-61xl);
+  font-weight: 500;
+  display: inline-block;
+  width: 956px;
+  height: 107px;
+}
+.reach-out-to {
+  top: 5354px;
+  left: 303px;
+  width: 845px;
+  height: 167px;
+}
+.contactdbankio,
+.pricing1 {
+  position: absolute;
+  font-size: var(--font-size-31xl);
+  font-weight: 500;
+}
+.contactdbankio {
+  top: 6015px;
+  left: 44px;
+  display: inline-block;
+  width: 773px;
+  height: 84px;
+}
+.pricing1 {
+  top: 5573px;
+  left: 162px;
+}
+.sales {
+  top: 5677px;
+}
+.careers1,
+.dbank-c-2023,
+.developers,
+.sales,
+.why-us {
+  position: absolute;
+  left: 162px;
+  font-size: var(--font-size-31xl);
+  font-weight: 500;
+}
+.careers1 {
+  top: 5782px;
+  display: none;
+}
+.dbank-c-2023,
+.developers,
+.why-us {
+  top: 5887px;
+}
+.dbank-c-2023,
+.why-us {
+  top: 6015px;
+  left: 850px;
+}
+.why-us {
+  top: 2611px;
+  left: 93px;
+  font-size: var(--font-size-68xl);
+  letter-spacing: -0.04em;
+  line-height: 74px;
+  font-weight: 600;
+}
+.homepage {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 6111px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
